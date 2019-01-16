@@ -69,4 +69,9 @@ public class UserProvider implements UserService {
         }
         return ResultUtil.execOK();
     }
+
+    @Override
+    public ResultVO queryHome(String token) {
+        return null;
+    }
 }
