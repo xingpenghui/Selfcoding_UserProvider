@@ -5,7 +5,8 @@
 
     <dubbo:application name="xph_userProvider"></dubbo:application>
     <dubbo:registry protocol="zookeeper" address="zookeeper://39.105.189.141:2181"></dubbo:registry>
-    <dubbo:protocol name="dubbo" port="21881"></dubbo:protocol>
+    <dubbo:protocol name="dubbo" port="21882"></dubbo:protocol>
     <dubbo:service interface="com.feri.service.user.UserService" retries="0" ref="userprovider"></dubbo:service>
     <dubbo:service interface="com.feri.service.user.UserSigninService" retries="0" ref="usersigninprovider"></dubbo:service>
+    <dubbo:service interface="com.feri.service.user.UserdetailService" retries="0" ref="userdetailprovider"></dubbo:service>
 </beans>

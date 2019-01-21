@@ -7,8 +7,11 @@ import com.feri.common.util.JedisUtil;
 import com.feri.common.util.ResultUtil;
 import com.feri.common.vo.ResultVO;
 import com.feri.dao.user.UserDao;
+import com.feri.dao.user.UserdetailDao;
 import com.feri.domain.user.User;
+import com.feri.domain.user.Userdetial;
 import com.feri.service.user.UserService;
+import com.feri.service.user.UserdetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -74,4 +77,5 @@ public class UserProvider implements UserService {
     public ResultVO queryHome(String token) {
         return null;
     }
+
 }
